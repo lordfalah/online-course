@@ -642,7 +642,7 @@ section.step-to-step{
     border-radius: 50%;    
     grid-area: mid1;
     position: relative;
-    z-index: 5;
+    /* z-index: 5; */
     transition: 0.50s ease-in-out;
     cursor: pointer;
 }
@@ -654,18 +654,17 @@ section.step-to-step{
     -moz-box-shadow: 0px 0px 35px 3px rgba(255,0,0,0.79);
 }
 
-.container .parent-box .box-photo2 .circle-ground1 .line-mid{
+.container .parent-box .box-photo2 .line-mid{
     position: absolute;
-    height: 600px;
+    height: 610px;
     width: 10px;
     background-color: black;
     margin-left: auto;
     margin-right: auto;
-    top: 69.8px;
+    top: 120px;
     left: 0;
     right: 0;
     text-align: center;
-    z-index: 2;
 }
 
 
@@ -759,7 +758,7 @@ section.free{
 .free .container .oval-free{
     /* background-color: #c7e1f3; */
     width: 100%;
-    height: 350px;
+    height: 500px;
     background-image: url(img/oval_miring.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -882,6 +881,16 @@ footer{
         height: 940px;
     }
 
+    /* line mid */
+    .container .parent-box .box-photo2 .line-mid{
+        top: 250px;
+        height: 900px;
+    }
+
+    .free .container .oval-free{
+        height: 415px;
+    }
+
 }
 
 /* // Medium devices (tablets, less than 992px) */
@@ -977,14 +986,23 @@ footer{
         height: 60px;
     }
 
-    .container .parent-box .box-photo2 .circle-ground1 .line-mid{
+    .container .parent-box .box-photo2 .line-mid{
+        top: 200px;
         height: 800px;
     }
 
     .free .container .oval-free{
-        width: 300px;
-        height: 235px;
+        height: 305px; 
     }
+
+    .free .container .oval-free .text-free{
+        width: 100%;
+    }
+
+    /* .img-fluid{
+        width: 150% !;
+    } */
+
 }
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -1067,29 +1085,38 @@ footer{
         height: 150px;
     }
 
-    .answer-question .half-circle{
-        /* transform: rotate(270deg) translateY(550px); */
-    }
-
     .container .parent-box .box-photo2 .circle-ground1{
         background-color: red;
         width: 50px;
         height: 50px;
     }
 
-    .container .parent-box .box-photo2 .circle-ground1 .line-mid{
+    .container .parent-box .box-photo2  .line-mid{
         width: 7px;
-        height: 760px;
+        height: 720px;
     }
 
     .register{
         margin-top: 200px;
+        height: 650px;
+    }
+
+    .register .follow-step{
+        height: fit-content;
     }
 
     .free .container .oval-free{
-        width: 500px;
-        height: 350px;
+        width: 100%;
+        height: 380px;
         margin-bottom: 30px;
+    }
+
+    .register .content-follow-step{
+        height: 185px;
+    }
+
+    .img-fluid{
+        width: 80%;
     }
 
 }
@@ -1263,7 +1290,7 @@ footer{
 
     .box-photo1 .line-zero{
         width: 8px;
-        height: 1600px;
+        height: 1450px;
         background-color: black;
         position: absolute;
         margin-left: auto;
@@ -1273,7 +1300,7 @@ footer{
         text-align: center;
     }
 
-    .container .parent-box .box-photo2 .circle-ground1 .line-mid{
+    .container .parent-box .box-photo2 .line-mid{
         height: 1200px;
         margin-top: -1390px;
         position: absolute;
@@ -1281,10 +1308,7 @@ footer{
         display: none;
     }
 
-    section.step-to-step{
-        /* position: absolute;
-        z-index: 1; */
-    }
+
 
 
     .container .parent-box .box-photo2{
@@ -1301,6 +1325,7 @@ footer{
     .container .parent-box .box-photo2 .oval-first{
         background-color: transparent;
         display: none;
+        z-index: -10;
     }
 
     /* .step-to-step .container .parent-first-box{} */
@@ -1308,6 +1333,14 @@ footer{
     /* .step-content .box-photo1{
         position: relative;
     } */
+
+    .register{
+        height: 700px;
+    }
+
+    .register .img-man-regis img{
+        width: 90%;
+    }
 }
 
 
@@ -1395,6 +1428,11 @@ footer{
         width: 350px;
         height: 350px;
         transform: rotate(270deg) translateY(250px);
+    }
+
+
+    .container .parent-box .box-photo2 .line-mid{
+        display: none;
     }
 
 
