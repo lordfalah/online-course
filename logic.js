@@ -6,6 +6,7 @@ export function fullCollom(full){
         if(getString === "gambar-full"){
             allImg.classList.remove("col-md-8");
             console.log("col 8");
+            
         
         }else if(getString === "text-full"){
             allImg.classList.remove("col-md-4");
@@ -46,14 +47,15 @@ export function scrollWindow(classComponent1, classComponent2, classComponent3, 
         // console.log(scrolling);
 
         if(scrolling >= classComponent4.offsetTop + 2900){
-            console.log("nyampe");
+            // console.log("nyampe");
             classComponent4.classList.add("registerLeft");
 
             if(classComponent4.classList.contains("registerLeft")){
-                console.log(true)
+                // console.log(true, "asasasa");
                 setTimeout(() =>{
                     classComponent4.style.transition = "0.80s ease";
-                    classComponent4.style.boxShadow = "23px 0px 37px -10px rgba(0,0,0,0.15) inset";    
+                    classComponent4.style.boxShadow = "40px 0px 37px -10px rgba(0,0,0,0.35) inset";    
+                    // console.log("habis")
                 }, 1100)
             }
         };

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="home">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,56 +8,73 @@
     <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    
 
     <title>Hello, world!</title>
   </head>
   <body>
-
+    <!-- Navbar -->
     <!-- Optional JavaScript; choose one of the two! -->
-    <div class=".container parent-first">
+
+
+
+    <nav class="navbar navbar-expand-sm fixed-top p-2" style="background-color: #6ab7ee;">
+      <a class="navbar-brand ml-lg-5 ml-md-3 ml-sm-2 home-link " href="#home">
+        <h3 class="title ml-3">Course</h3>
+      </a>
+      
+      
+      <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav justify-content-lg-end justify-content-md-end justify-content-sm-end  mr-lg-5 mr-md-3 mr-sm-2" id="navbarNav">
+        <ul class="navbar-nav ml-3">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class=".container parent-first mt-5 pt-lg-3">
         <!-- Content here -->
 
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse right-place " id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-              </ul>
-            </div>
-        </nav>
+        
+        
 
         <!-- image-parent -->
         <div class="picture-parent">
             <div class="content-picture">
-                <div class="row">
-                  <div class="col-sm-6 title-text-picture">
-                    <h2>Let's Practice Like Profesional Langguange</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Iste pariatur id aspernatur eveniet qui quam 
-                        ea amet corporis eius mollitia!
-                    </p>
-                    <button type="button" class="btn btn-primary">Get Started</button>
-                  </div>
-                  <div class="col-sm-6 picture">
+                <div class="row align-items-center">
+                    <div class="col-sm-8 col-md-6 col-lg-6 col-xl-6 title-text-picture  pl-5">
+                      <h2>Let's Practice Like Profesional Langguange</h2>
+                      <p class="text-justify m-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                          Iste pariatur id aspernatur eveniet qui quam 
+                          ea amet corporis eius mollitia!
+                      </p>
+                      <button type="button" class="btn btn-primary">Get Started</button>
+                    </div>
+                  <div class="col-sm-4 col-md-6 col-lg-6 col-xl-6 picture">
                     <!-- <img src="img/bg-web2.png" 
                     class="" width="850px" height="450px"> -->
                     <!-- <img src="img/bg-web4.png" class=""> -->
                     <div class="img-shaddow">
 
-                      <img src="img/vector-smile.png" class="img-fluid"
+                      <img src="img/vector-smile.png" class="img-fluid d-none d-md-block"
                       width="95%">
                         <!-- <div class="bg-oval">
                             <div class="oval">
@@ -84,23 +101,24 @@
 
 
             <div class="row">
-                <div class="col-md-12 text-course">
+                <div class="col-md-12  text-course">
                     <h2>This Course?</h2>
                 </div>
             </div>
 
             <div class="row">
-              <div class="col-sm-5 image-mid">
+              <div class="col-md-6 image-mid">
                 <!-- <p class="text0">title</p> -->
-                <p class="text-center text1">what are the advantages of this course?</p>
+                <p class="text-center text1">This course is very much very good features
+                </p>
 
                 <div class="gambar-feature">
                   <img src="cartoon/Featured products.png" 
                   class="rounded float-left" width="120%">
                 </div>
               </div>
-              <div class="col-sm-7 because">
-                <p class="text-center text2">Because this course is...</p>
+              <div class="col-md-6 because mt-5 mt-md-0 mt-lg-0 mt-xl-0">
+                <p class="text-center text2">Feature The Course</p>
 
                 <div class="box">
                   <div class="row">
@@ -177,7 +195,7 @@
 
         <div class="question-chat">
           <div class="row">
-            <div class="col-md-8">
+            <div class="col-12 col-lg-8 col-xl-8">
               <div class="text-question">
                 <h3>Question Client Chat</h3>
                 <!-- <h3>Nice Question</h3> -->
@@ -185,26 +203,33 @@
     
               <div class="question-dialog">
                 <div class="dialog-client">
-                  <div class="box-dialog1">
-                    <div class="chat-oval1">
+
+                  <div class="chat-dialog mt-3 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 p-sm-0 p-md-0 p-lg-0 p-xl-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Google_Contacts_icon.svg" width="10%">
+                  
+                    <div class="chat-oval ">
                       <p>Lorem ipsum dolor sit amet consectetur 
                         adipisicing elit. Harum, animi.
                       </p>
                     </div>
                   </div>
-    
+
                   <div class="right-dialog">
-                    <div class="box-dialog2">
-                      <div class="chat-oval2">
-                        <p>Lorem ipsum dolor sit amet consectetur 
-                          adipisicing elit. Harum, animi.
-                        </p>
-                      </div>
+                    <div class="chat-oval">
+                      <p>Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Harum, animi.
+                      </p>
                     </div>
+
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Google_Contacts_icon.svg" width="10%">
+
+
                   </div>
     
-                  <div class="box-dialog3">
-                    <div class="chat-oval3">
+                  <div class="last-dialog">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Google_Contacts_icon.svg" width="10%">
+
+                    <div class="chat-oval">
                       <p>Lorem ipsum dolor sit amet consectetur 
                         adipisicing elit. Harum, animi.
                       </p>
@@ -215,9 +240,28 @@
               </div>
             </div>
 
-            <div class="col-md-4">
+
+
+            <div class="col-12 col-lg-4 col-xl-4">
               <h3>Nice Question</h3>
-              <div class="answer-question">
+              <div class="answer-question position-relative">
+                <div class="wood position-absolute">
+                  <div class="bar1 p-3 d-flex justify-content-center align-items-center">
+                    <img src="icon/phone-fill.svg" width="10%">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, iure!</p>
+                  </div>
+                  <div class="bar1 p-3 d-flex justify-content-center align-items-center">
+                    <img src="icon/phone-fill.svg" width="10%">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, iure!</p>
+                  </div>
+                  <div class="bar1 p-3 d-flex justify-content-center align-items-center">
+                    <img src="icon/phone-fill.svg" width="10%">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, iure!</p>
+                  </div>
+                  
+                </div>
+
+
                 <div class="half-circle">
                   <h4>Click Me</h4>
                 </div>
@@ -229,8 +273,9 @@
 
 
         <div class="content-people">
-          <h3>What People Say</h3>
+
           <div class="container people-say">
+            <h3 class="text-center p-4">What People Say</h3>
             <div class="segitiga4"></div>
               <div class="coma-top">
                 <!-- img -->
@@ -331,13 +376,13 @@
 
                 <div class="card mb-3" style="max-width: 540px;">
                   <div class="row no-gutters">
-                    <div class="gambar-full col-md-8">
+                    <div class="gambar-full col-xl-8">
                       <img src="img/Smiling-Man-Writing-Journal-Research-Glasses-Smart.jpg" 
                       class="img-fluid">
                     </div>
-                    <div class="text-full col-md-4">
+                    <div class="text-full col-xl-4">
                       <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Card title1</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to .</p>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                       </div>
@@ -379,11 +424,11 @@
  
                  <div class="card mb-3" style="max-width: 540px;">
                    <div class="row no-gutters photo-text">
-                     <div class="gambar-full col-md-8">
+                     <div class="gambar-full col-xl-8">
                        <img src="img/Smiling-Man-Writing-Journal-Research-Glasses-Smart.jpg" 
                        class="img-fluid">
                      </div>
-                     <div class="text-full col-md-4">
+                     <div class="text-full col-xl-4">
                        <div class="card-body">
                          <h5 class="card-title">Card title</h5>
                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to .</p>
@@ -429,11 +474,11 @@
  
                  <div class="card mb-3" style="max-width: 540px;">
                    <div class="row no-gutters">
-                     <div class="gambar-full col-md-8">
+                     <div class="gambar-full col-xl-8">
                        <img src="img/Smiling-Man-Writing-Journal-Research-Glasses-Smart.jpg" 
                        class="img-fluid">
                      </div>
-                     <div class="text-full col-md-4">
+                     <div class="text-full col-xl-4">
                        <div class="card-body">
                          <h5 class="card-title">Card title</h5>
                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to .</p>
@@ -493,7 +538,7 @@
                   <div class="text-free">
                     <h4 class="text-center">Trial Use</h4>
                     <p>You Can use Trial Learn 15 Days
-                      Lorem ipsum dologhp_enIUFR5ul7e8sqiQ4RExYZoYNJLmd0QYNr0r sit amet consectetur adipisicing elit. 
+                      Lorem ipsum amet consectetur adipisicing elit. 
                       Voluptatibus magni labore dolorum nobis delectus nulla!
                     </p>
                   </div>
@@ -501,18 +546,18 @@
               </div>
             </div>
             <div class="col-md-5">
-              <div class="photo-free">
-                <h4>It, Free?</h4>
+              <div class="photo-free d-none d-sm-block mt-sm-5 mt-xl-0  mt-lg-0 mt-md-0 pt-5 pt-xl-0 pt-lg-0 pt-md-0">
+                <h4 class="text-center">It, Free?</h4>
                 <img src="cartoon/Branding Design.png" 
-                class="img-fluid" width="100%">
+                class="img-fluid " width="100%">
               </div>
             </div>
           </div>
 
 
-          <div class="row content-course">
+          <div class="row content-course flex-column-reverse flex-sm-row align-items-center justify-items-center">
             <div class="col-sm-4">
-              <div class="oval-press">
+              <div class="oval-press mt-5 mt-sm-0 mt-md-0 mt-lg-0 mt-xl-0  pt-5 pt-sm-0 pt-md-0 pt-lg-0 pt-xl-0">
                 <div class="content-press">
                   <p>
                     <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -523,26 +568,28 @@
               </div>
             </div>
 
-            <div class="col-sm-8">
+            <div class="col-sm-8 d-flex justify-content-center">
               <div class="text-get-course">
-                <P>Where I can Get this Course?
-                  <br>
-                  How Much this Course?
-                  <br>
-                  Can i use Code kupon?
-                </P>
+                <div class="text-tanya">
+                  <P>Where I can Get this Course?
+                    <br>
+                    How Much this Course?
+                    <br>
+                    Can i use Code kupon?
+                  </P>
+                </div>
                 
               </div>
             </div>
           </div>
 
 
-          <div class="row get-course">
+          <div class="row get-course mt-5 pt-0 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5   pt-sm-5 pt-md-5 pt-lg-5 pt-xl-5">
             
             <div class="col-md-12">
 
               <div class="collapse" id="collapseExample">
-                <h4 class="text-center">You Can get this course in Bellow</h4>
+                <h4 class="text-center p-3">You Can get this course in Bellow</h4>
               </div>
             </div>
 
@@ -596,7 +643,7 @@
             </div>
 
             <div class="col-md-6">
-              <div class="parent-diskon">
+              <div class="parent-diskon mt-5 mt-md-2 mt-lg-2 mt-xl-2">
                 <div class="text-diskon">
                   <h4>qasassas</h4>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -622,7 +669,55 @@
       <!-- last -->
       <footer class="last">
         <div class="container foot">
-          <p>lorem</p>
+          <div class="row p-3">
+            <div class="col-4">
+              <h3 class="text-center">Contact</h3>
+
+              
+              
+            <div class="info-all-kontak mt-4">
+                <div class="location">
+                  <h4>Location</h4>
+                  <p class="">Jalan Bukit Barisan, 26</p>
+                  <hr class="" width="50%">
+                </div>
+
+                <div class="phone">
+                  <h4 class="">Mobile Phone:</h4>
+                  <p class="">(+62) 896-3585-0325</p>
+                  <hr class="" width="50%">
+                </div>
+
+                <div class="instagram">
+                  <h4>Instagram</h4>
+                  <p class="">@mrrFalah</p>
+                  <hr class="" width="50%">
+                </div>
+
+
+                <div class="email">
+                  <h4>Email:</h4>
+                  <p class="">irfin1581@gmail.com</p>
+                  <hr class="" width="50%">
+                </div>
+            </div>
+
+
+
+            </div>
+
+            <div class="col-4">
+              <h3 class="text-center">Find Me</h3>
+            </div>
+
+            <div class="col-4">
+              <h3 class="text-center">About Me</h3>
+              <div class="info-all-tentang">
+                <p></p>
+              </div>
+
+            </div>
+          </div>
         </div>
       </footer>
 

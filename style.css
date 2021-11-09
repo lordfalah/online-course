@@ -4,11 +4,17 @@
     
 }
 
+h3{
+    font-family: 'Inter', sans-serif;
+}
+
+
+
 
 
 body{
     overflow-x: hidden;
-    height: 5500px;
+    /* height: 6000px; */
     background: rgb(234, 234, 245) !important; 
 }
 
@@ -16,20 +22,11 @@ body{
 .parent-first{
     width: 100%;
     height: 50px;
-    background-color: black;
+    /* background-color: black; */
     
 }
 
-.parent-first .right-place{
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    padding-right: 40px;
-}
 
-.right-place ul li{
-    padding-right: 30px;
-}
 
 
 /* gambar */
@@ -38,30 +35,12 @@ body{
 .content-picture{
     background-color: #c7e1f3;
     width: 100%;
-    height: 500px;
-    /* padding: 20px; */
-    box-sizing: border-box;
-    overflow: hidden;
-}
 
-.content-picture .row{
-    align-items: center;
-}
-
-.content-picture .title-text-picture {
-    padding: 2.7em;
-}
-
-.content-picture .title-text-picture h2{
-    padding-bottom: 15px;
 }
 
 
-.content-picture .picture{
-    /* position: relative;
-    left: -30px;
-    top: -70px; */
-}
+
+
 
 
 /* img shaddow layer */
@@ -69,7 +48,7 @@ body{
 .content-picture .picture .img-shaddow{
     background-image: url(img/bg-web5.png);
     width: 100%;
-    height: 500px;
+    height: 550px;
     position: relative;
     display: flex;
     align-items: center;
@@ -92,13 +71,6 @@ body{
     border-radius: 50%;
     background-color: bisque;
 }
-
-
-/* responsive oval-bg */
-/* insert code */
-/* responsive oval-bg */
-
-/* img shaddow layer */
 
 
 .content-picture .picture .oval-background{
@@ -173,7 +145,7 @@ body{
 
 
 .this-course .because .box .box-top{
-    width: 75%;
+    width: 100%;
     /* height: 180px; */
     background-color: rgb(255, 255, 255);
     border-radius: 8%;
@@ -191,7 +163,7 @@ body{
 }
 
 .this-course .because .box .box-bottom{
-    width: 75%;
+    width: 100%%;
     background-color: white;
     border-radius: 5%;
     display: flex;
@@ -238,8 +210,8 @@ body{
     /* background-color: cornflowerblue; */
     background-image: url(img/chat-dialog-color.png);
     background-size: cover;
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
 }
 
 
@@ -251,6 +223,21 @@ body{
     justify-content: flex-end;
 }
 
+.answer-question .wood{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: 20px;
+}
+
+.answer-question .wood .bar1{
+    background-color: rgb(250, 250, 250);
+    /* height: 50px; */
+    border-radius: 50px;
+    width: 100%;
+}
 
 .answer-question .half-circle {
     width: 400px; 
@@ -274,81 +261,53 @@ body{
 
 
 .question-chat .question-dialog .dialog-client{
-    width: 65%;
-    /* height: 65%; */
-    /* border: 5px solid yellow; */
-    /* margin-top: 10px; */
-    margin-left: 50px;
-    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
 }
 
-.question-chat .question-dialog .dialog-client .box-dialog1{
-    position: relative;
-    background-image: url(img/chat-man.png);
-    width: 125px;
-    height: 120px;
-    background-size: cover;
+.question-chat .question-dialog .dialog-client .chat-dialog{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    column-gap: 30px;
 }
 
-.box-dialog1 .chat-oval1{
-    width: 250px;
-    /* height: 80px; */
-    padding: 10px;
-    box-sizing: border-box;
+
+
+.dialog-client .chat-oval{
     background-color: white;
-    position: absolute;
-    left: 180px;
-    top: 10px;
-    border-radius: 6px;
+    width: 60%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
-.box-dialog2 .chat-oval2{
-    width: 250px;
-    /* height: 80px; */
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: white;
-    position: absolute;
-    right: 130px;
-    top: 20px;
-    border-radius: 6px;
-}
 
-.box-dialog3 .chat-oval3{
-    width: 250px;
-    /* height: 80px; */
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: white;
-    position: absolute;
-    left: 180px;
-    top: 50px;
-    border-radius: 6px;
-}
+
 
 
 .question-chat .question-dialog .dialog-client .right-dialog{
-    width: 100%;
+    width: 80%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    column-gap: 30px;
 }
 
-.question-chat .question-dialog .dialog-client .box-dialog2{
-    position: relative;
-    background-image: url(img/chat-man.png);
-    width: 125px;
-    height: 120px;
-    background-size: cover;
 
+
+.question-chat .question-dialog .dialog-client .last-dialog{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    column-gap: 30px;
 }
 
-.question-chat .question-dialog .dialog-client .box-dialog3{
-    position: relative;
-    background-image: url(img/chat-man.png);
-    width: 125px;
-    height: 120px;
-    background-size: cover;
-}
+
+
 
 /* content people */
 .content-people{
@@ -505,8 +464,9 @@ body{
 .register .img-man-regis .title-register{
     display: flex;
     align-items: center;
-    height: 80px;
+    /* height: 80px; */
     margin-bottom: -50px;
+    padding: 20px;
 }
 
 .register .img-man-regis{
@@ -551,11 +511,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 25px;
+    padding: 35px;
     row-gap: 10px;
-    /* box-shadow: 23px 0px 37px -10px rgba(0,0,0,0.15) inset;
-    -webkit-box-shadow: 23px 0px 37px -10px rgba(0,0,0,0.15) inset;
-    -moz-box-shadow: 23px 0px 37px -10px rgba(0,0,0,0.15) inset; */
     text-align: center;
     transition: 0.80s ease;
     transform: translateX(800px);
@@ -749,27 +706,26 @@ section.free{
 }
 
 .free .container .parent-oval-free{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 80%;
+    border: 5px solid black;
+    height: 250px;
+    left: 100px;
+    top: 50px;
+    position: relative;
 }
 
 .free .container .oval-free{
-    /* background-color: #c7e1f3; */
-    width: 100%;
-    height: 500px;
-    background-image: url(img/oval_miring.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -50px;
+    background-color: #bbc7ff;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    left: -80px;
+    top: -50px;
+
 }
 
 .free .container .oval-free .text-free{
-    width: 80%;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -803,18 +759,26 @@ section.free{
 }
 
 .free .text-get-course{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border: 5px solid black;
+    position: relative;
+    width: 60%;
+    top: 50px;
+    height: 150px;
+}
+
+.free .text-get-course .text-tanya{
+    width: 80%;
+    background-color: #bbc7ff;
+    padding: 20px;
+    position: absolute;
+    top: -50px;
+    left: 100px;
 }
 
 .free .content-course{
     margin-top: 150px;
 }
 
-.free .get-course{
-    margin: 50px 0;
-}
 
 .get-course .photo-getCourse{
     margin-bottom: 20px;
@@ -855,14 +819,14 @@ footer{
 
     html{
         width: 100%;
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
     }
 
 
     body{
-        overflow: hidden;
+        /* overflow: hidden; */
         width: 100%;
-        height: 7000px;
+        /* height: 7000px; */
         
     }
 
@@ -888,7 +852,11 @@ footer{
     }
 
     .free .container .oval-free{
-        height: 415px;
+        /* height: 415px; */
+    }
+
+    .question-chat .question-dialog .dialog-client img{
+        width: 12%;
     }
 
 }
@@ -897,22 +865,22 @@ footer{
 @media (max-width: 992.80px){
 
     html{
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
 
     body{
         overflow-x: hidden;
         /* width: 100%; */
-        height: 8500px;
+        /* height: 8500px; */
     }
 
-    .question-chat .question-dialog .dialog-client .box-dialog1{
+    /* .question-chat .question-dialog .dialog-client .box-dialog1{
         width: 110px;
         height: 100px;
         top: -50px;
-    }
+    } */
 
-    .question-chat .question-dialog .dialog-client .box-dialog2{
+    /* .question-chat .question-dialog .dialog-client .box-dialog2{
         width: 110px;
         height: 100px;
         top: -8px;
@@ -926,28 +894,21 @@ footer{
 
     .box-dialog1 .chat-oval1{
         left: 150px;
-    }
+    } */
 
     .box-dialog2 .chat-oval2{
         /* top: -5px; */
     }
 
     .box-dialog3 .chat-oval3{
-        top: 20px;
+        /* top: 20px; */
     }
 
 
-    .question-chat .question-dialog{
+    /* .question-chat .question-dialog{
         width: 140%;
         transform: translateX(-80px);
-    }
-
-    .parent-first nav{
-        position: absolute;
-        left: 0;
-        right: 0;
-        z-index: 5;
-    }
+    } */
 
     .parent-first .right-place{
         display: flex;
@@ -958,22 +919,22 @@ footer{
     }
 
     .this-course .because .box .box-top{
-        width: 87%;
+        width: 100%;
     }
 
     .this-course .because .box .box-bottom{
-        width: 87%;
+        width: 100%;
     }
 
     .this-course .row .image-mid{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
         
     }
 
     .this-course .row .image-mid img{
-        width: 300px;
+        /* width: 300px; */
     }
 
     .answer-question .half-circle{
@@ -992,16 +953,23 @@ footer{
     }
 
     .free .container .oval-free{
-        height: 305px; 
+        /* height: 305px;  */
     }
 
     .free .container .oval-free .text-free{
         width: 100%;
     }
 
-    /* .img-fluid{
-        width: 150% !;
-    } */
+
+    .free .text-get-course{
+        top: 50px;
+    }
+
+    .free .text-get-course .text-tanya{
+        top: -50px;
+        width: 100%;
+        left: 50px;
+    }
 
 }
 
@@ -1017,19 +985,15 @@ footer{
     }
 
     html{
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
         /* height: 3500px; */
     }
 
     body{
-        overflow: hidden;
-        height: 8000px;
+        /* overflow: hidden; */
+        /* height: 8000px; */
     }
 
-    .question-chat .question-dialog .dialog-client{
-        /* height: 100%;
-        width: 100%; */
-    }
 
     .question{
         /* width: 300px; */
@@ -1053,7 +1017,7 @@ footer{
     }
 
     .this-course .row .image-mid img{
-        width: 210px;
+        width: 410px;
     }
     
     .content-picture .picture .img-shaddow img{
@@ -1107,15 +1071,32 @@ footer{
 
     .free .container .oval-free{
         width: 100%;
-        height: 380px;
-        margin-bottom: 30px;
+        /* height: 380px; */
+        /* margin-bottom: 30px; */
     }
 
     .register .content-follow-step{
         height: 185px;
     }
 
+    .free .container .parent-oval-free{
+        width: 72%;
+    }
 
+
+    .free .text-get-course{
+        top: -50px;
+        left: -50px;
+    }
+
+    .free .text-get-course .text-tanya{
+        top: 50px;
+        width: 120%;
+    }
+
+    .question-chat .question-dialog{
+        width: 130%;
+    }
 
 }
 
@@ -1124,13 +1105,13 @@ footer{
 @media (max-width: 575.98px) {
 
     html{
-        /* overflow-x: scroll; */
+        overflow-x: hidden;
     }
 
     body{
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         /* width: 100%; */
-        height: 9500px;
+        /* height: 9500px; */
     }
 
 
@@ -1161,8 +1142,13 @@ footer{
 
     .content-picture .img-shaddow{
         position: absolute;
-        top: -320px;
+        top: -250px;
+        height: 400px !important;
         
+    }
+
+    .content-picture{
+        background-color: transparent;
     }
 
     .content-picture .img-shaddow img{
@@ -1223,14 +1209,14 @@ footer{
 
 
     .question-chat .question-dialog .dialog-client .box-dialog3{
-        width: 130px;
-        height: 90px;
+        /* width: 130px;
+        height: 90px; */
     }
 
     .box-dialog3 .chat-oval3{
-        left: 130px;
+        /* left: 130px;
         width: 225px;
-        height: 90px;
+        height: 90px; */
     }
 
     .content-people{
@@ -1326,18 +1312,32 @@ footer{
         z-index: -10;
     }
 
-    /* .step-to-step .container .parent-first-box{} */
-
-    /* .step-content .box-photo1{
-        position: relative;
-    } */
-
     .register{
         height: 700px;
     }
 
     .register .img-man-regis img{
         width: 90%;
+    }
+
+
+    .question-chat .question-dialog .dialog-client .chat-dialog{
+        justify-content: start;
+        margin-top: -60px;
+    }
+    
+    .dialog-client .chat-oval {
+        width: 70%;
+    }
+
+    .question-chat .question-dialog .dialog-client .right-dialog{
+        justify-content: start;
+        margin-top: -60px;
+    }
+
+    .question-chat .question-dialog .dialog-client .last-dialog{
+        justify-content: start;
+        margin-top: -60px;
     }
 }
 
@@ -1349,7 +1349,7 @@ footer{
     }
 
     body{
-        height: 8500px;
+        /* height: 8500px; */
     }
 
     .box{
@@ -1363,43 +1363,17 @@ footer{
     }
 
     .content-picture .picture .img-shaddow{
-        height: 400px;
-        margin-top: -50px;
+        margin-top: -100px;
+        height: 450px !important;
     }
+
+    
 
     .question-chat .question-dialog{
-        height: 550px;
+        height: 550px ;
     }
     
-    .question-chat .question-dialog .dialog-client .box-dialog1{
-        margin-left: -50px;
-    }
 
-    .box-dialog1 .chat-oval1{
-        width: 215px;
-        /* height: 115px; */
-    }
-
-    .question-chat .question-dialog .dialog-client .right-dialog{
-        margin-left: 50px;
-    }
-
-    .question-chat .question-dialog .dialog-client .box-dialog2{
-        left: -10px;
-    }
-
-    .box-dialog2 .chat-oval2{
-        right: 120px;
-    }
-
-    .question-chat .question-dialog .dialog-client .box-dialog3{
-        left: -50px;
-    }
-
-    .box-dialog3 .chat-oval3{
-        width: 210px;
-        height: 115px;
-    }
 
 
     .content-people{
@@ -1433,8 +1407,45 @@ footer{
         display: none;
     }
 
+    .free .container .oval-free{
+        width: 120%;
+        margin: auto;
+        left: 0;
+        right: 0;
 
+    }
 
+    .free .container .parent-oval-free{
+        left: 20px;
+    }
+
+    .question-chat .question-dialog .dialog-client .right-dialog{
+        margin-top: -50px;
+    }
+
+    .question-chat .question-dialog .dialog-client .last-dialog{
+        margin-top: -50px;
+    }
+
+    .question-chat .question-dialog .dialog-client{
+        margin-left: 30px;
+    }
+
+    .question-chat .question-dialog .dialog-client img{
+        width: 15%;
+    }
+
+    .question-chat .question-dialog .dialog-client .chat-dialog{
+        column-gap: 20px;
+    }
+
+    .question-chat .question-dialog .dialog-client .right-dialog{
+        column-gap: 20px;
+    }
+
+    .question-chat .question-dialog .dialog-client .last-dialog{
+        column-gap: 20px;
+    }
 }
 
 /* client interview responsive */
