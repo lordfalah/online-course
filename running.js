@@ -6,6 +6,8 @@ import {
 
 
 
+
+
 const getNav = document.querySelector("nav");
 const backgroundNav = document.querySelector(".parent-first");
 
@@ -103,9 +105,9 @@ if(window.matchMedia("(min-width: 410.92px) and (max-width: 575.98px)").matches)
 if(window.matchMedia("(max-width: 409px)").matches){
 
     scrollWindow(
-        dataEffect(photoRegister1.offsetTop + 5770, photoRegister1), dataEffect(photoRegister2.offsetTop + 5800, photoRegister2), 
-        dataEffect(photoRegister3.offsetTop + 5800, photoRegister3), 
-        dataEffect(effectRegister.offsetTop + 5100, effectRegister) 
+        dataEffect(photoRegister1.offsetTop + 6000, photoRegister1), dataEffect(photoRegister2.offsetTop + 6000, photoRegister2), 
+        dataEffect(photoRegister3.offsetTop + 6000, photoRegister3), 
+        dataEffect(effectRegister.offsetTop + 5220, effectRegister) 
         );
 
 

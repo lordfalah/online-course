@@ -804,6 +804,26 @@ footer{
     background-color: rgb(199, 225, 243);
 }
 
+footer .info-all-me .img-icon{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+footer .info-all-me .img-icon img{
+    width: 15%;
+    
+}
+
+footer .info-all-tentang .intro-me{
+    font-size: 1.2em;
+}
+
+footer .info-all-tentang .intro-me img{
+    display: flex;
+    margin: auto;
+}
 
 
 /* client interview responsive */
@@ -867,37 +887,7 @@ footer{
         /* height: 8500px; */
     }
 
-    /* .question-chat .question-dialog .dialog-client .box-dialog1{
-        width: 110px;
-        height: 100px;
-        top: -50px;
-    } */
 
-    /* .question-chat .question-dialog .dialog-client .box-dialog2{
-        width: 110px;
-        height: 100px;
-        top: -8px;
-    }
-
-    .question-chat .question-dialog .dialog-client .box-dialog3{
-        width: 110px;
-        height: 100px;
-        top: 45px;
-    }
-
-    .box-dialog1 .chat-oval1{
-        left: 150px;
-    } */
-
-
-
-
-
-
-    /* .question-chat .question-dialog{
-        width: 140%;
-        transform: translateX(-80px);
-    } */
 
     .parent-first .right-place{
         display: flex;
@@ -956,6 +946,11 @@ footer{
         left: 50px;
     }
 
+
+    footer .info-all-tentang .intro-me{
+        font-size: 1.09em;
+    }
+
 }
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -969,22 +964,10 @@ footer{
         
     }
 
-
-
-
-
-
     .question{
         /* width: 300px; */
         margin: auto;
     }
-
-    /* .nice-question{
-        height: 200px;
-        background-color: red;
-        width: 200px;
-        margin: auto;
-    } */
 
 
     .this-course .because .box .box-top{
@@ -1083,9 +1066,10 @@ footer{
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
-    html{
-        width: 100%;
-    }
+
+
+
+
 
     .this-course .row .image-mid img{
         width: 100%;
@@ -1177,9 +1161,6 @@ footer{
         width: 225px;
         height: 90px;
     }
-
-
-
 
 
 
@@ -1300,15 +1281,36 @@ footer{
         justify-content: start;
         margin-top: -60px;
     }
+
+
+    /* icon */
+    footer .info-all-me .img-icon{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+    footer .info-all-me .img-icon img{
+        width: 30%;
+    }
+
+
+
+    footer .info-all-tentang .intro-me img{
+        display: flex;
+        margin: auto;
+    }
+
+
 }
 
 
 @media (max-width: 410.92px) {
 
 
-    html{
-        width: 100%;
-    }
+
 
 
     .box{
