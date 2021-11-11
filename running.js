@@ -25,14 +25,93 @@ const getRegister = document.querySelector(".register");
 const effectRegister = document.querySelector(".register .follow-step");
 
 
+// save
+let storageEffect = [];
+
+function dataEffect(size, elementParents){
+    storageEffect.push(size, elementParents);
+
+    return storageEffect;
+}
+
+// Extra large devices (large desktops, 1200px and up)
 if(window.matchMedia("(min-width: 1200px)").matches){
 
+    scrollWindow(
+        dataEffect(photoRegister1.offsetTop + 3400, photoRegister1), dataEffect(photoRegister2.offsetTop + 3450, photoRegister2), 
+        dataEffect(photoRegister3.offsetTop + 3500, photoRegister3), 
+        dataEffect(effectRegister.offsetTop + 2900, effectRegister) 
+        );
 
-    scrollWindow(photoRegister1, photoRegister2, photoRegister3, effectRegister);
-
-    console.log(effectRegister);
 
 };
+
+// Large devices (desktops, less than 1200px)
+if(window.matchMedia("(min-width: 992px) and (max-width: 1199.98px)").matches){
+    
+
+    scrollWindow(
+        dataEffect(photoRegister1.offsetTop + 3400, photoRegister1), dataEffect(photoRegister2.offsetTop + 3440, photoRegister2), 
+        dataEffect(photoRegister3.offsetTop + 3450, photoRegister3), 
+        dataEffect(effectRegister.offsetTop + 2700, effectRegister) 
+        );
+
+};
+
+// Medium devices (tablets, 768px and up)
+if(window.matchMedia("(min-width: 768px) and (max-width: 991.98px)").matches){
+    storageEffect = []; 
+
+    scrollWindow(
+        dataEffect(photoRegister1.offsetTop + 3950, photoRegister1), dataEffect(photoRegister2.offsetTop + 3980, photoRegister2), 
+        dataEffect(photoRegister3.offsetTop + 3930, photoRegister3), 
+        dataEffect(effectRegister.offsetTop + 3300, effectRegister) 
+        );
+
+};
+
+
+// Small devices (landscape phones, 576px and up)
+if(window.matchMedia("(min-width: 576px) and (max-width: 767.98px)").matches){
+    storageEffect = []; 
+
+    scrollWindow(
+        dataEffect(photoRegister1.offsetTop + 4900, photoRegister1), dataEffect(photoRegister2.offsetTop + 4950, photoRegister2), 
+        dataEffect(photoRegister3.offsetTop + 4935, photoRegister3), 
+        dataEffect(effectRegister.offsetTop + 4300, effectRegister) 
+        );
+
+
+};
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+if(window.matchMedia("(min-width: 410.92px) and (max-width: 575.98px)").matches){
+
+    scrollWindow(
+        dataEffect(photoRegister1.offsetTop + 5350, photoRegister1), dataEffect(photoRegister2.offsetTop + 5350, photoRegister2), 
+        dataEffect(photoRegister3.offsetTop + 5310, photoRegister3), 
+        dataEffect(effectRegister.offsetTop + 4600, effectRegister) 
+        );
+
+
+};
+
+
+
+if(window.matchMedia("(max-width: 410.92px)").matches){
+
+    scrollWindow(
+        dataEffect(photoRegister1.offsetTop + 5770, photoRegister1), dataEffect(photoRegister2.offsetTop + 5800, photoRegister2), 
+        dataEffect(photoRegister3.offsetTop + 5800, photoRegister3), 
+        dataEffect(effectRegister.offsetTop + 5100, effectRegister) 
+        );
+
+
+};
+
+
 
 
 

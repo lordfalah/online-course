@@ -163,7 +163,7 @@ body{
 }
 
 .this-course .because .box .box-bottom{
-    width: 100%%;
+    width: 100%;
     background-color: white;
     border-radius: 5%;
     display: flex;
@@ -788,9 +788,7 @@ section.free{
 
 /* can get the diskon */
 
-section.diskon{
-    /* margin-top: 150px; */
-}
+
 
 .diskon h3{
     padding: 20px;
@@ -851,9 +849,6 @@ footer{
         height: 900px;
     }
 
-    .free .container .oval-free{
-        /* height: 415px; */
-    }
 
     .question-chat .question-dialog .dialog-client img{
         width: 12%;
@@ -864,9 +859,7 @@ footer{
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 992.80px){
 
-    html{
-        /* overflow-x: hidden; */
-    }
+
 
     body{
         overflow-x: hidden;
@@ -896,13 +889,9 @@ footer{
         left: 150px;
     } */
 
-    .box-dialog2 .chat-oval2{
-        /* top: -5px; */
-    }
 
-    .box-dialog3 .chat-oval3{
-        /* top: 20px; */
-    }
+
+
 
 
     /* .question-chat .question-dialog{
@@ -933,9 +922,7 @@ footer{
         
     }
 
-    .this-course .row .image-mid img{
-        /* width: 300px; */
-    }
+
 
     .answer-question .half-circle{
         margin-left: -50px;
@@ -952,9 +939,7 @@ footer{
         height: 800px;
     }
 
-    .free .container .oval-free{
-        /* height: 305px;  */
-    }
+
 
     .free .container .oval-free .text-free{
         width: 100%;
@@ -984,15 +969,9 @@ footer{
         
     }
 
-    html{
-        /* overflow-y: scroll; */
-        /* height: 3500px; */
-    }
 
-    body{
-        /* overflow: hidden; */
-        /* height: 8000px; */
-    }
+
+
 
 
     .question{
@@ -1105,16 +1084,8 @@ footer{
 @media (max-width: 575.98px) {
 
     html{
-        overflow-x: hidden;
+        width: 100%;
     }
-
-    body{
-        /* overflow-x: hidden; */
-        /* width: 100%; */
-        /* height: 9500px; */
-    }
-
-
 
     .this-course .row .image-mid img{
         width: 100%;
@@ -1208,16 +1179,9 @@ footer{
     }
 
 
-    .question-chat .question-dialog .dialog-client .box-dialog3{
-        /* width: 130px;
-        height: 90px; */
-    }
 
-    .box-dialog3 .chat-oval3{
-        /* left: 130px;
-        width: 225px;
-        height: 90px; */
-    }
+
+
 
     .content-people{
         margin: auto;
@@ -1229,10 +1193,7 @@ footer{
         flex-wrap: wrap;
     }
 
-    .people-say{
-        /* margin: auto; */
-        /* width: 80% !important; */
-    }
+
 
     .people-say .box-parent-say .box-say3{
         width: 100%;
@@ -1344,13 +1305,11 @@ footer{
 
 @media (max-width: 410.92px) {
 
+
     html{
-        overflow-x: hidden;
+        width: 100%;
     }
 
-    body{
-        /* height: 8500px; */
-    }
 
     .box{
         width: 80%;

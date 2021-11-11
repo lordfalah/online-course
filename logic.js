@@ -41,37 +41,45 @@ export function repeatAll(all){
 
 // scrolling all effect
 export function scrollWindow(classComponent1, classComponent2, classComponent3, classComponent4){
+
+    
     $(window).scroll(function(){
         let scrolling = $(this).scrollTop();
-        
-        // console.log(scrolling);
+        // console.log(scrolling)
 
-        if(scrolling >= classComponent4.offsetTop + 2900){
-            // console.log("nyampe");
-            classComponent4.classList.add("registerLeft");
 
-            if(classComponent4.classList.contains("registerLeft")){
-                // console.log(true, "asasasa");
+        if(scrolling >= classComponent4[6]){
+            // console.log("Nyampeeee");
+            // console.log(classComponent4[6])
+            // console.log(classComponent4)
+            classComponent4[7].classList.add("registerLeft");
+
+            if(classComponent4[7].classList.contains("registerLeft")){
+
                 setTimeout(() =>{
-                    classComponent4.style.transition = "0.80s ease";
-                    classComponent4.style.boxShadow = "40px 0px 37px -10px rgba(0,0,0,0.35) inset";    
-                    // console.log("habis")
+                    classComponent4[7].style.transition = "0.40s ease";
+                    classComponent4[7].style.boxShadow = "40px 0px 37px -10px rgba(0,0,0,0.35) inset";    
+
                 }, 1100)
             }
         };
 
-        if(scrolling >= classComponent1.offsetTop + 3400){
+    
+        if(scrolling >= classComponent1[0]){
+            classComponent1[1].classList.add("horizontalLeft");
+            // console.log(classComponent1[0])
             // console.log("nyampe");
-            classComponent1.classList.add("horizontalLeft");
         };
 
-        if(scrolling >= classComponent2.offsetTop + 3450){
-            classComponent2.classList.add("horizontalRight");
+        if(scrolling >= classComponent2[2]){
+            // console.log("nyampe");
+            
+            classComponent2[3].classList.add("horizontalRight");
         };
         
-        if(scrolling >= classComponent3.offsetTop + 3500){
-            // console.log("hayukk")
-            classComponent3.classList.add("horizontalLeftLast");
+        if(scrolling >= classComponent3[4]){
+            console.log("nyampe");
+            classComponent3[5].classList.add("horizontalLeftLast");
         };  
 
     });
