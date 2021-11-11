@@ -100,7 +100,7 @@ if(window.matchMedia("(min-width: 410.92px) and (max-width: 575.98px)").matches)
 
 
 
-if(window.matchMedia("(max-width: 410.92px)").matches){
+if(window.matchMedia("(max-width: 409px)").matches){
 
     scrollWindow(
         dataEffect(photoRegister1.offsetTop + 5770, photoRegister1), dataEffect(photoRegister2.offsetTop + 5800, photoRegister2), 
