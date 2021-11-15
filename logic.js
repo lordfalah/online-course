@@ -78,7 +78,7 @@ export function scrollWindow(classComponent1, classComponent2, classComponent3, 
         };
         
         if(scrolling >= classComponent3[4]){
-            console.log("nyampe");
+            // console.log("nyampe");
             classComponent3[5].classList.add("horizontalLeftLast");
         };  
 
@@ -88,4 +88,34 @@ export function scrollWindow(classComponent1, classComponent2, classComponent3, 
 
 
 
-// adokasodkosdkaodkodkaoskodkoksao
+// nav effect hooverr
+
+
+export function  navAdding(effect, mouse, link){
+
+    let nameSelect =  mouse.innerText;
+    
+    effect.forEach(editNav =>{
+        if(editNav.classList.contains(nameSelect)){
+            editNav.classList.add("editNav");
+            link.addEventListener("click", function(){
+
+                setTimeout(() =>{
+                    editNav.classList.remove("editNav")
+                }, 300);
+            });
+
+            // console.log(link)
+
+            link.addEventListener("mouseout", function(){
+                editNav.classList.remove("editNav");
+            })
+            
+
+        }else{
+            editNav.classList.remove("editNav");
+        }
+    });
+
+
+}
