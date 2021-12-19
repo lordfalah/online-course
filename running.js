@@ -1,8 +1,8 @@
 import {
-    fullCollom, 
-    repeatAll,  
-    scrollWindow,
-    navAdding
+    // scrollWindow,
+    navAdding,
+    ModulusColor,
+    WindowScroll
 } from './logic.js';
 
 
@@ -20,12 +20,7 @@ const imageFull = document.querySelectorAll(".gambar-full");
 const textFull = document.querySelectorAll(".text-full");
 
 
-// scroll effect 
-const photoRegister1 = document.querySelector(".right-img-create1 .card-photo-left");
-const photoRegister2 = document.querySelector(".right-img-create1 .card-photo-left2");
-const photoRegister3 = document.querySelector(".card-photo-left3");
-const getRegister = document.querySelector(".register");
-const effectRegister = document.querySelector(".register .follow-step");
+
 
 
 // save
@@ -37,26 +32,87 @@ function dataEffect(size, elementParents){
     return storageEffect;
 }
 
+
+// this course effect box 
+const parentSquare = document.querySelector("#fitur");
+const getAllSquare = document.querySelectorAll(".box .square");
+
+// dialog effect
+const getAllDialog = document.querySelectorAll(".text-dialog");
+const parentDialog = document.querySelector("#question");
+
+
+// effetc showboxsay
+const getAllboxSay = document.querySelectorAll(".box-parent-say .box-say");
+const parentBoxSay = document.querySelector("#testimoni");
+
+
+
+// scroll effect 
+const photoRegister1 = document.querySelector(".right-img-create1 .card-photo-left");
+const photoRegister2 = document.querySelector(".right-img-create1 .card-photo-left2");
+const photoRegister3 = document.querySelector(".card-photo-left3");
+const getRegister = document.querySelector(".register");
+const effectRegister = document.querySelector(".register .follow-step");
+
+
 // Extra large devices (large desktops, 1200px and up)
 if(window.matchMedia("(min-width: 1200px)").matches){
 
-    scrollWindow(
-        dataEffect(photoRegister1.offsetTop + 3400, photoRegister1), dataEffect(photoRegister2.offsetTop + 3450, photoRegister2), 
-        dataEffect(photoRegister3.offsetTop + 3500, photoRegister3), 
-        dataEffect(effectRegister.offsetTop + 2900, effectRegister) 
-        );
+    // scrollWindow(
+    //     dataEffect(photoRegister1.offsetTop + 3400, photoRegister1), dataEffect(photoRegister2.offsetTop + 3450, photoRegister2), 
+    //     dataEffect(photoRegister3.offsetTop + 3500, photoRegister3), 
+    //     dataEffect(effectRegister.offsetTop + 2900, effectRegister) 
+    //     );
 
+    const effectPhotoRegister1 = new WindowScroll(photoRegister1.offsetTop + 3400, photoRegister1, "horizontalLeft");
+    const effectPhotoRegister2 = new WindowScroll(photoRegister2.offsetTop + 3450, photoRegister2, "horizontalRight");
+    const effectPhotoRegister3 = new WindowScroll(photoRegister3.offsetTop + 3500, photoRegister3, "horizontalLeftLast");
+    const effectRegisterEm = new WindowScroll(effectRegister.offsetTop + 2900, effectRegister, "registerLeft");
+    
+
+    effectPhotoRegister1.scrollingEmet();
+    effectPhotoRegister2.scrollingEmet();
+    effectPhotoRegister3.scrollingEmet();
+    effectRegisterEm.scrollingEmet();
+
+        // undiffined
+
+        // scrollWindow(
+        //     dataEffect(photoRegister1.offsetTop + 100)
+        // );
 
     $(window).scroll(function(){
         let wsc = $(this).scrollTop();
         if(wsc >= parentSquare.offsetTop - 250){
-            console.log("nyampe")
+            // console.log("nyampe")
             getAllSquare.forEach((square, index) =>{
                 setTimeout(() =>{
                     square.classList.add("showSquare");
                 }, 400 * index)
             });
         };
+
+        // parent dialog
+        if(wsc >= parentDialog.offsetTop - 400){
+            getAllDialog.forEach((dialog, index) =>{
+                setTimeout(() =>{
+                    dialog.classList.add("showDialog");
+                }, index * 500)
+            });
+        };
+        
+
+        // parent box-say
+        if(wsc > parentBoxSay.offsetTop - 510){
+            // console.log("jisajijsaisjai")
+            getAllboxSay.forEach((boxSay, index) =>{
+                setTimeout(() =>{
+                    boxSay.classList.add("showBoxSay");
+                }, index * 350);
+            })
+        }
+
     });
 
 };
@@ -72,17 +128,40 @@ if(window.matchMedia("(min-width: 992px) and (max-width: 1199.98px)").matches){
         );
 
 
-
     $(window).scroll(function(){
         let wsc = $(this).scrollTop();
+        // show square
         if(wsc >= parentSquare.offsetTop - 250){
-            console.log("nyampe")
+            // console.log("nyampe")
             getAllSquare.forEach((square, index) =>{
                 setTimeout(() =>{
                     square.classList.add("showSquare");
                 }, 400 * index)
             });
         };
+
+
+        // dialog show
+        if(wsc >= parentDialog.offsetTop - 480){
+            // console.log("yeee")
+            getAllDialog.forEach((dialog, index) =>{
+                setTimeout(() =>{
+                    dialog.classList.add("showDialog");
+                }, index * 500)
+            })
+        }
+
+
+        // parent box-say
+        if(wsc > parentBoxSay.offsetTop - 460){
+            // console.log("jisajijsaisjai")
+            getAllboxSay.forEach((boxSay, index) =>{
+                setTimeout(() =>{
+                    boxSay.classList.add("showBoxSay");
+                }, index * 350);
+            })
+        }
+
     });
 
 };
@@ -101,13 +180,36 @@ if(window.matchMedia("(min-width: 768px) and (max-width: 991.98px)").matches){
     $(window).scroll(function(){
         let wsc = $(this).scrollTop();
         if(wsc >= parentSquare.offsetTop - 250){
-            console.log("nyampe")
+            // console.log("nyampe")
             getAllSquare.forEach((square, index) =>{
                 setTimeout(() =>{
                     square.classList.add("showSquare");
                 }, 400 * index)
             });
         };
+
+
+        // dialog show
+        if(wsc >= parentDialog.offsetTop - 480){
+            // console.log("yeee")
+            getAllDialog.forEach((dialog, index) =>{
+                setTimeout(() =>{
+                    dialog.classList.add("showDialog");
+                }, index * 500)
+            })
+        }
+
+
+        // parent box-say
+        if(wsc > parentBoxSay.offsetTop - 400){
+            // console.log("jisajijsaisjai")
+            getAllboxSay.forEach((boxSay, index) =>{
+                setTimeout(() =>{
+                    boxSay.classList.add("showBoxSay");
+                }, index * 350);
+            })
+        }
+
     });
 
 };
@@ -128,13 +230,36 @@ if(window.matchMedia("(min-width: 576px) and (max-width: 767.98px)").matches){
     $(window).scroll(function(){
         let wsc = $(this).scrollTop();
         if(wsc >= parentSquare.offsetTop){
-            console.log("nyampe")
+            // console.log("nyampe")
             getAllSquare.forEach((square, index) =>{
                 setTimeout(() =>{
                     square.classList.add("showSquare");
                 }, 400 * index)
             });
         };
+
+
+        // dialog show
+        if(wsc >= parentDialog.offsetTop - 480){
+            // console.log("yeee")
+            getAllDialog.forEach((dialog, index) =>{
+                setTimeout(() =>{
+                    dialog.classList.add("showDialog");
+                }, index * 500)
+            })
+        }
+
+
+        // parent box-say
+        if(wsc > parentBoxSay.offsetTop - 400){
+            // console.log("jisajijsaisjai")
+            getAllboxSay.forEach((boxSay, index) =>{
+                setTimeout(() =>{
+                    boxSay.classList.add("showBoxSay");
+                }, index * 350);
+            })
+        }
+
     });
 };
 
@@ -154,13 +279,36 @@ if(window.matchMedia("(min-width: 410.92px) and (max-width: 575.98px)").matches)
         $(window).scroll(function(){
             let wsc = $(this).scrollTop();
             if(wsc >= parentSquare.offsetTop + 30){
-                console.log("nyampe")
+                // console.log("nyampe")
                 getAllSquare.forEach((square, index) =>{
                     setTimeout(() =>{
                         square.classList.add("showSquare");
                     }, 400 * index)
                 });
             };
+
+
+            // dialog show
+            if(wsc >= parentDialog.offsetTop - 490){
+                // console.log("yeee")
+                getAllDialog.forEach((dialog, index) =>{
+                    setTimeout(() =>{
+                        dialog.classList.add("showDialog");
+                    }, index * 500)
+                })
+            }
+
+
+            // parent box-say
+            if(wsc > parentBoxSay.offsetTop - 400){
+                console.log("jisajijsaisjai");
+                getAllboxSay.forEach((boxSay, index) =>{
+                    setTimeout(() =>{
+                        boxSay.classList.add("showBoxSay");
+                    }, index * 750);
+                })
+            }
+            
         });
 };
 
@@ -178,13 +326,36 @@ if(window.matchMedia("(max-width: 409px)").matches){
     $(window).scroll(function(){
         let wsc = $(this).scrollTop();
         if(wsc >= parentSquare.offsetTop + 70){
-            console.log("nyampe")
+            // console.log("nyampe")
             getAllSquare.forEach((square, index) =>{
                 setTimeout(() =>{
                     square.classList.add("showSquare");
-                }, 400 * index)
+                }, 850 * index)
             });
         };
+
+
+        // dialog show
+        if(wsc >= parentDialog.offsetTop - 200){
+            // console.log("yeee")
+            getAllDialog.forEach((dialog, index) =>{
+                setTimeout(() =>{
+                    dialog.classList.add("showDialog");
+                }, index * 550)
+            })
+        }
+
+
+        // parent box-say
+        if(wsc > parentBoxSay.offsetTop - 120){
+            console.log("jisajijsaisjai")
+            getAllboxSay.forEach((boxSay, index) =>{
+                setTimeout(() =>{
+                    boxSay.classList.add("showBoxSay");
+                }, index * 900);
+            })
+        }
+
     });
 };
 
@@ -192,26 +363,39 @@ if(window.matchMedia("(max-width: 409px)").matches){
 
 
 
-// effect backrgound color all circle ground
+// effect backrgound color all circle ground && press me
 const circleGround = document.querySelectorAll(".circle-ground1");
-repeatAll(circleGround);
+// repeatAll(circleGround);
+const getPress = document.querySelectorAll(".content-press p a");
+
+const effectPress = new ModulusColor("effectPress", getPress, 1);
+const effecttCircleGround = new ModulusColor("color-set", circleGround, 1);
+
+effectPress.effectColSet();
+effecttCircleGround.effectColSet();
+// console.log(tester.length)
 
 
 // navbar scrollink animation
 const getHome = document.querySelector(".title");
-const getLink = document.querySelector(".home-link");
-
-getLink.addEventListener("click", function(e){
-    const getAttr = this.getAttribute("href");
-    const parentLink = $(`${getAttr}`);
+const getLink = document.querySelectorAll(".scroll-top-ws");
 
 
-    $("html, body").animate({
-        scrollTop: parentLink.offset().top
+getLink.forEach(allButtonLink =>{
+    allButtonLink.addEventListener("click", function(e){
+        const getAttr = this.getAttribute("href");
+        const parentLink = $(`${getAttr}`);
+    
+        $("html, body").animate({
+            scrollTop: parentLink.offset().top - 80
+        })
+    
     })
-
-
+    
 })
+
+
+
 
 
 $(window).scroll(function(){
@@ -349,17 +533,10 @@ getAllImgHov.forEach(img => {
             closeBtn.classList.add("effectClose");
         }, 200);
 
-
-        
-
     });
 })
 
 
-
-// this course effect box 
-const parentSquare = document.querySelector("#fitur");
-const getAllSquare = document.querySelectorAll(".box .square");
 
 
 
@@ -381,7 +558,6 @@ halfCircle.addEventListener("click", function(){
         }, 500 * (index));
     });
 });
-
 
 
 
