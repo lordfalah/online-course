@@ -42,6 +42,7 @@ export class ModulusColor{
 
 
 // for window scrolling
+// *** It will complete **
 export class WindowScroll{
 
     constructor(valueCmp, elementCmp, classCmp){
@@ -55,31 +56,72 @@ export class WindowScroll{
         let mentahComponent = this._cmp2;
         let classComponent = this._cmp3;
 
-        $(window).scroll(function(){
+        $(window).scroll(async function(){
             let scrolling = $(this).scrollTop();
 
+
             if(scrolling >= value){
-                console.log("ketemu");
+                // console.log("ketemu");
 
-                mentahComponent.classList.add(classComponent);
+                if(mentahComponent.length > 1){
+                    console.log("asas")
+                    mentahComponent.forEach((item, index) =>{
+                        setTimeout(() =>{
+                            item.classList.add(classComponent);
+                        }, 400 * index);
+                    })
 
-                if(classComponent == "registerLeft"){
-                    console.log("SAsa")
-                    
-                    setTimeout(() =>{
-                        mentahComponent.style.transition = "0.40s ease";
-                        mentahComponent.style.boxShadow = "40px 0px 37px -10px rgba(0,0,0,0.35) inset";    
-        
-                    }, 1100);
-                    
+                }else{
+                    console.log("saqsasasaa")
+                    mentahComponent[0].classList.add(classComponent);
+
+                    if(classComponent == "registerLeft"){
+                        console.log("SAsa")
+                        
+                        setTimeout(() =>{
+                            mentahComponent[0].style.transition = "0.40s ease";
+                            mentahComponent[0].style.boxShadow = "40px 0px 37px -10px rgba(0,0,0,0.35) inset";    
+            
+                        }, 1100);
+                        
+                    };
                 };
 
+
+
             };
+  
         });
+
 
 
     };
 };
+
+
+class ButtonAndLoop extends WindowScroll{
+    constructor(valueCmp, elementCmp, classCmp, elementBtn,classBtn){
+        super(valueCmp, elementCmp, classCmp);
+        this._elementBtn = elementBtn;
+        this._classBtn = classBtn;
+    };
+
+
+
+    somethingButton(){
+        if(this._elementBtn.length <= 1){
+            console.log(this._elementBtn);
+            this.elementBtn.addEventListener(this._classBtn, function(){
+                // do something
+            })
+        
+        }else{
+            // do something btn
+        }
+    }
+
+}
+
 
 
 // // scrolling all effect
